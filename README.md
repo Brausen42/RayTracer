@@ -1,7 +1,4 @@
-This directory contains the Ray tracing program for Homework1d in CSCI 5607
-The contents of this directory were authored by Alex Brausen (braus028, 5033191)
-
-I used cmake to compile and build my program so the following commands should build an executable called 'raytracer':
+cmake can be used to build the program using the following commands:
 cmake ./ 
 make -j
 
@@ -13,7 +10,7 @@ and if given an appropriate scene file, a .ppm image will be generated and will 
 example.ppm
 
 An appropriate scene file should have the following format:
-
+```
 eye eyex eyey eyez
 viewdir vdirx vdiry vdirz
 updir upx upy upz
@@ -25,5 +22,6 @@ sphere cx cy cz r
 ellipsoid cx cy cz rx ry rz
 light x y z w r g b
 ...
+```
 
 where the first string on each line is a keyword and the following are the associated parameters.
